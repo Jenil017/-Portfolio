@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jainil Moradiya - Web Developer and UI/UX Designer Portfolio">
+    <meta name="keywords" content="web development, UI/UX design, portfolio, frontend, backend, fullstack">
+    <title>Jainil Moradiya | Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" defer />
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="cube">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+        </div>
+        <div class="loading-text">Loading... 0%</div>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <!-- Progress Bar -->
+    <div class="progress-bar"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">JM</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas class="hero-canvas"></canvas>
+        <div class="hero-content">
+            <div class="glitch-container" data-glitch="Jainil Moradiya">
+                <h1 class="glitch" data-text="Jainil Moradiya">Jainil Moradiya</h1>
+                <p class="tagline">Crafting responsive, modern, and intelligent digital experiences.</p>
+            </div>
+            <div class="hero-subtitle">
+                I'm a <span class="typed-text"></span>
+                <div class="gradient-bar"></div>
+            </div>
+            <p class="hero-description">
+                Building beautiful, functional, and user-friendly digital experiences. 
+                I specialize in creating responsive websites and applications with modern technologies.
+            </p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#projects" class="btn btn-outline">View My Work</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/jenil017" target="_blank" rel="noopener" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jainil-moradiya-1321b625a" target="_blank" rel="noopener" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://wa.me/919099620986" target="_blank" rel="noopener" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:moradiyajenil528@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm Jainil, a passionate web developer and designer with a focus on creating beautiful, functional, and user-centered digital experiences. With a background in both frontend and backend technologies, I bridge the gap between design and development.</p>
+                    <p>I believe in writing clean, efficient code and designing intuitive user interfaces that make technology accessible to everyone. When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through blog posts and tutorials.</p>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <canvas class="about-canvas"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-container">
+            <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category" data-aos="fade-up">
+                    <h3>Frontend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="progress-bar" data-progress="95%">
+                                <div class="progress-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="progress-bar" data-progress="90%">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Bootstrap</span>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="progress-bar" data-progress="85%">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SASS/SCSS</span>
+                                <span class="skill-percentage">60%</span>
+                            </div>
+                            <div class="progress-bar" data-progress="88%">
+                                <div class="progress-fill" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Backend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PHP</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bar" data-progress="85%">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="progress-bar" data-progress="80%">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Database & Tools</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bar" data-progress="85%">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">VScode</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="progress-bar" data-progress="80%">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Twllio</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="progress-bar" data-progress="70%">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git/GitHub</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="progress-bar" data-progress="90%">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container project-container">
+            <div class="section-header">
+                <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    Here are some of my recent works
+                </p>
+            </div>
+            
+            <!-- Project 1 -->
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-canvas-container">
+                    <canvas class="project-canvas" id="project-canvas-1"></canvas>
+                    <div class="fallback-content">
+                        <i class="fallback-icon fas fa-paw"></i>
+                        <h4 class="fallback-title">Animal Welfare Foundation</h4>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <h3 class="project-title">Animal Welfare Foundation</h3>
+                    <p class="project-description">
+                        A comprehensive platform built for animal welfare organizations to manage animal registrations, adoption processes, and donation campaigns.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                    <div class="project-features">
+                        <div class="project-feature">
+                            <i class="feature-icon fas fa-check-circle"></i>
+                            <span>Animal registration & tracking system</span>
+                        </div>
+                        <div class="project-feature">
+                            <i class="feature-icon fas fa-check-circle"></i>
+                            <span>Adoption process management</span>
+                        </div>
+                        <div class="project-feature">
+                            <i class="feature-icon fas fa-check-circle"></i>
+                            <span>Donation campaign platform</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-canvas-container">
+                    <canvas class="project-canvas" id="project-canvas-2"></canvas>
+                    <div class="fallback-content">
+                        <i class="fallback-icon fas fa-tint"></i>
+                        <h4 class="fallback-title">Blood Donation System</h4>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <h3 class="project-title">Blood Donation System</h3>
+                    <p class="project-description">
+                        A cloud-based platform connecting blood donors with recipients in real-time, featuring geolocation services and emergency request handling.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">Google Maps API</span>
+                    </div>
+                    <div class="project-features">
+                        <div class="project-feature">
+                            <i class="feature-icon fas fa-check-circle"></i>
+                            <span>Real-time donor matching</span>
+                        </div>
+                        <div class="project-feature">
+                            <i class="feature-icon fas fa-check-circle"></i>
+                            <span>Emergency blood request system</span>
+                        </div>
+                        <div class="project-feature">
+                            <i class="feature-icon fas fa-check-circle"></i>
+                            <span>Hospital integration platform</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-canvas-container">
+                    <canvas class="project-canvas" id="project-canvas-3"></canvas>
+                    <div class="fallback-content">
+                        <i class="fallback-icon fas fa-layer-group"></i>
+                        <h4 class="fallback-title">KastBhanjan Plywood</h4>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <h3 class="project-title">KastBhanjan Plywood</h3>
+                    <p class="project-description">
+                        An inventory management system for a plywood manufacturing company, featuring automated stock tracking, order processing, and business analytics.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">jQuery</span>
+                    </div>
+                    <div class="project-features">
+                        <div class="project-feature">
+                            <i class="feature-icon fas fa-check-circle"></i>
+                            <span>Real-time inventory tracking</span>
+                        </div>
+                        <div class="project-feature">
+                            <i class="feature-icon fas fa-check-circle"></i>
+                            <span>Order processing workflow</span>
+                        </div>
+                        <div class="project-feature">
+                            <i class="feature-icon fas fa-check-circle"></i>
+                            <span>Business analytics dashboard</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>moradiyajenil528@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 9099620986</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Surat, India</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/jenil017" target="_blank" rel="noopener" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/jainil-moradiya-1321b625a" target="_blank" rel="noopener" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/919099620986" target="_blank" rel="noopener" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:moradiyajenil528@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Jainil Moradiya. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- External Libraries -->
+    <!-- Three.js for 3D elements -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    
+    <!-- Typed.js for typing animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <!-- AOS for scroll animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html> 
