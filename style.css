@@ -854,7 +854,12 @@ body {
 /* Custom Cursor - Only show on non-touch devices */
 @media (hover: hover) {
     html {
-        cursor: none;
+        cursor: auto;
+    }
+    
+    .cursor,
+    .cursor-follower {
+        display: none !important;
     }
     
     .cursor {
