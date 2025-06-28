@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupCustomCursor();
     setupProjectCards();
     handleResponsiveLayout();
+    setupContactForm();
     
     // Make sure fallback content is immediately visible
     document.querySelectorAll('.fallback-content').forEach(el => {
@@ -24,6 +25,37 @@ document.addEventListener('DOMContentLoaded', () => {
         initStaticFallback(canvas, index);
     });
 });
+
+/////////////////////////////////////////////////////////////////////
+// Contact Form (Formspree) Handler
+/////////////////////////////////////////////////////////////////////
+function setupContactForm() {
+    const form = document.getElementById('contactForm');
+    const statusEl = document.getElementById('formStatus');
+    if (!form) return;
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        if (statusEl) statusEl.textContent = 'Sending...';
+
+        try {
+            const res = await fetch(form.action, {
+                method: 'POST',
+                headers: { 'Accept': 'application/json' },
+                body: new FormData(form)
+            });
+            if (res.ok) {
+                statusEl && (statusEl.textContent = 'Thank you! Your message has been sent.');
+                form.reset();
+            } else {
+                statusEl && (statusEl.textContent = 'Oops! There was a problem submitting your form.');
+            }
+        } catch (err) {
+            console.error(err);
+            statusEl && (statusEl.textContent = 'Network error. Please try again later.');
+        }
+    });
+}
 
 // Initialize AOS library
 function initializeAOS() {

@@ -965,6 +965,13 @@ body {
     transition: width 0.3s ease;
 }
 
+/* Contact form status message */
+.form-status {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--primary);
+}
+
 .nav-links a:hover::after, 
 .nav-links a.active::after {
     width: 100%;
